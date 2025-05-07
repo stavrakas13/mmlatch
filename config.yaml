@@ -30,6 +30,7 @@ model:
   noise_modality: text 
   noise_percentage_train: 0.2
   augment_train_data: false
+  noise_percentage_test: 0.2
 
 experiment:
   name: base-test
@@ -49,4 +50,4 @@ trainer:
   max_epochs: 100
   retain_graph: true
   load_model: mosei-sentiment-audio-text-visual_checkpoint.best.pth
-  checkpoint_dir: /home/geopar/projects/mm/clean_code/checkpoints
+  checkpoint_dir: checkpoints
