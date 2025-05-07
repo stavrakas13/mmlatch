@@ -1,0 +1,71 @@
+%!TEX program = xelatex
+\documentclass[10pt]{article}
+
+% Packages for XeLaTeX
+\usepackage{fontspec} % For custom fonts and Unicode support
+\usepackage{multicol} % For two-column layout
+\usepackage{amsmath} % For mathematical equations
+\usepackage{graphicx} % For including figures
+\usepackage{cite} % For managing references
+\usepackage{lipsum} % For placeholder text (remove in your actual document)
+\usepackage{geometry} % To adjust margins and padding
+\usepackage{authblk} % For author affiliations
+
+% Set main font (optional, replace with your preferred font)
+\setmainfont{Linux Libertine}
+
+% Title, Author, and Date
+\title{\textbf{MMLatch: Η Επιστροφή}}
+\author{\textit{Anastasios Tsetsilas \qquad Aris Markogiannis \qquad Markos Kalogerakis \\ Michalis Raftopoulos \qquad Pavlos Livitsanos}}
+\affil{National Technical University of Athens}
+\date{\today}
+
+% Adjust page geometry (reduce margins)
+\geometry{
+    a4paper, % Paper size
+    left=20mm, % Left margin
+    right=20mm, % Right margin
+    top=30mm, % Top margin
+    bottom=30mm, % Bottom margin
+    columnsep=8mm % Space between columns
+}
+
+\begin{document}
+
+% Title and Abstract
+\maketitle
+\begin{abstract}
+    \lipsum[1] % Replace with your abstract text
+\end{abstract}
+
+% Two-column content starts here
+\begin{multicols}{2}
+
+% Introduction
+\section{Introduction}
+\lipsum[2-3] % Replace with your introduction text
+	\cite{DBLP:journals/corr/abs-2201-09828}
+
+% Methods
+\section{Methods}
+\lipsum[4] % Replace with your methods text
+
+% Results
+\section{Results}
+\lipsum[5] % Replace with your results text
+
+% Discussion
+\section{Discussion}
+\lipsum[6] % Replace with your discussion text
+
+% Conclusion
+\section{Conclusion}
+\lipsum[7] % Replace with your conclusion text
+
+% References
+\bibliographystyle{plain} % Choose your preferred bibliography style
+\bibliography{references} % Replace with your .bib file name
+
+\end{multicols}
+
+\end{document}

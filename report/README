@@ -1,0 +1,4 @@
+Project Report
+- Compile this .tex file using xelatex
+- You might have problems with the font. If so, you may change it like this example:
+    \setmainfont{Times New Roman}
