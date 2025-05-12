@@ -23,6 +23,8 @@ import re
 
 from sklearn.metrics import silhouette_score, davies_bouldin_score
 from sklearn.metrics.pairwise import cosine_similarity
+from validators import ValidationError as ValidationFailure
+
 
 
 T = TypeVar("T")
